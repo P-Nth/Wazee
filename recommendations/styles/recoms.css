@@ -1,0 +1,142 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 0.8em;
+}
+.heading {
+  margin-top: 5em;
+  padding: 1em 0;
+}
+.heading p {
+  font-family: monospace;
+  font-size: 22px;
+  line-height: 30px;
+  padding: 0 0 0.5em 0;
+  border-bottom: 1px solid rgb(180, 180, 180);
+}
+.heading p strong {
+  padding: 0 0.3em 0 0;
+  font-size: 30px;
+}
+.recomend {
+  padding: 1em 0 2em 0;
+  display: grid;
+  grid-gap: 1em;
+}
+.recomend p {
+  letter-spacing: 0.4px;
+  font-family: cursive;
+  font-size: 20px;
+}
+.recomend #more {
+  font-family: monospace;
+  font-size: 15px;
+}
+.recomend #more a {
+  color: blue;
+}
+.product_type .grid_items {
+  display: grid;
+  margin-bottom: 1em;
+  justify-content: space-between;
+}
+.product_type .grid_items p {
+  margin: 0;
+  font-size: 20px;
+  padding: 0.5em 0.4em;
+  font-family: monospace;
+  border-radius: 0 0 0 3px;
+}
+.product_type .grid_items p:hover {
+  color: blue;
+  background-color: #f0f0f0;
+}
+.product_type .grid_items .active {
+  color: blue;
+  border: transparent;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.products h1 {
+  font-size: 25px;
+  padding: 0.5em 0;
+  font-family: cursive;
+}
+.products .grid_disp {
+  display: grid;
+  grid-gap: 0.5em;
+  margin: 1em 0;
+}
+.products .display {
+  border: 1px solid #c5c5c5;
+  padding: 1em 0.5em;
+  display: grid;
+  grid-gap: 1em;
+}
+.products .display a {
+  text-decoration: none;
+  color: #000;
+}
+.products .display p {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 1em;
+  font-family: monospace;
+}
+.products .display img {
+  width: 100%;
+}
+.products .display .descr p {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  font-family: serif;
+  text-align: left;
+  padding: 0;
+}
+.products .display .descr #learnmore {
+  color: blue;
+  text-decoration: underline;
+}
+.hide {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+@media all and (min-width: 1100px) {
+  body {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .recomend p {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+  }
+  .recomend #more {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .product_type .grid_items {
+    display: flex;
+    grid-gap: 1em;
+    margin: 1em 0;
+    justify-content: flex-start;
+  }
+  .product_type .grid_items p {
+    padding: 0.5em 1em;
+    border-radius: 3px 3px 0 0;
+  }
+  .product_type .grid_items .active {
+    border: 1px solid gray;
+    border-bottom: transparent;
+  }
+  .products .grid_disp {
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

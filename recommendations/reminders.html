@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ecd87c1d1d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/reminders.css">
+    <title>Reminders</title>
+</head>
+<body>
+    <div class="main">
+        <i class="fa-regular fa-bell"></i>
+        <h1>Get Started!</h1>
+        <p>Get reminders about medication and activities out of your head and let the app remember for you.</p>
+        <button>add first reminder</button>
+    </div>
+
+    <div class="sidenav">
+        <i class="fa-solid fa-xmark fa-pull-right"></i>
+        <div class="para">
+            <p class="medication"><i class="fa-solid fa-prescription-bottle-medical"></i> Medication</p>
+            <p class="activity"><i class="fa-solid fa-person-running"></i> Activity</p>
+            <a href="./recoms.html" style="text-decoration: none; color: rgb(0, 0, 0);"><p class="activity"><i class="fa-regular fa-heart"></i></i> Recomendations</p></a>
+            <a href="./events.html" style="text-decoration: none; color: rgb(0, 0, 0);"><p class="activity"><i class="fa-regular fa-calendar-days"></i></i> Events</p></a>
+        </div>
+    </div>
+
+    <div class="meds-page">
+        <p> <i class="fa-solid fa-arrow-left"></i> select medication </p>
+
+        <label class="unit" for="unit"> Unit</label>
+        <select name="unit" id="unit">
+            <option value=""></option>
+            <option value="pill(s)">pill(s)</option>
+            <option value="injection(s)">injection(s)</option>
+            <option value="tablespoon(s)">tablespoon(s)</option>
+            <option value="teaspoons(s)">teaspoons(s)</option>
+        </select>
+
+        <p class="one">How often do you take this medication?</p>
+
+        <div class="frequency">
+            <input type="radio" id="once" name="frequency" value="once"> 
+            <label for="once">Once daily</label> <br>
+            
+            <input type="radio" id="twice" name="frequency" value="twice"> 
+            <label for="twice">Twice Daily</label> <br>
+            
+            <input type="radio" id="needed" name="frequency" value="needed"> 
+            <label for="needed">As needed</label> <br>
+            
+            <input type="radio" id="other" name="frequency" value="other">
+            <label for="other">Other Frequency</label>
+        </div>
+
+        <button>next</button>
+    </div>
+
+    <div class="add-meds">
+        <p> <i class="fa-solid fa-xmark fa-pull-left"></i> add medication</p>
+        
+        <p class="meds-unit"></p>
+        <hr>
+
+        <p class="meds-freq"></p>
+
+        <button class="save">save</button>
+
+    </div>
+
+    <div class="once-daily">
+        <div class="time">
+            <span>time</span>  
+            <div class="add-time"><i class="fa-solid fa-plus"></i>time</div>
+        </div>
+        <div class="dose">
+            <span>dose</span>  
+            <div class="add-dose"><i class="fa-solid fa-plus"></i>dose</div>
+        </div>
+    </div>
+
+    <!--alarm clock-->
+    <div class="wrapper">
+        <div class="content">
+          <div class="column">
+            <select>
+              <option value="Hour" selected disabled hidden>Hour</option>
+            </select>
+          </div>
+          <div class="column">
+            <select>
+              <option value="Minute" selected disabled hidden>Minute</option>
+            </select>
+          </div>
+          <div class="column">
+            <select>
+              <option value="AM/PM" selected disabled hidden>AM/PM</option>
+            </select>
+          </div>
+        </div>
+        <button class="set">Set Alarm</button>    
+        <button class="cancel">Cancel</button>      
+    </div>
+    <!--alarm clock end-->
+
+    <!--add dosage-->
+    <div class="container">
+        <div class="dosage">
+            <select>
+            <option value="0" selected disabled hidden></option>
+            </select>
+            <div class="dosage-text"></div>
+        </div>
+        <div class="buttons">
+            <button class="set-dose">ok</button>
+            <button class="cancel-dose">cancel</button>
+        </div>
+    </div>
+    <!--add dosage end-->
+
+
+    <!--activities page-->
+
+    <div class="activities-page">
+        <p> <i class="fa-solid fa-arrow-left"></i> select activity</p>
+        
+        <div>
+            <h4 class="popular">Popular activities</h4>
+            <ul class="shown">
+                <li>Fitness walking</li>
+                <li>Walking</li>
+                <li>Physiotherapy</li>
+                <li>Running</li>
+                <li>Cycling</li>
+            </ul>
+
+            <h4 class="show-all">All activities</h4>
+            <ul class="all-activities"></ul>
+        </div> 
+    </div>
+
+    <div class="add-activities">
+        <p> <i class="fa-solid fa-xmark fa-pull-left"></i> add activity</p>
+        
+        <p class="activity-name"></p> <hr>
+
+        <p class="activity-duration">Duration <br> <span> no end date </span> </p><hr>
+        
+        <p class="activity-frequency">Frequency <br> <span> daily </span> </p><hr>
+
+        <div class="activity-time"><i class="fa-regular fa-clock"></i></i>add time</div>
+
+        <button class="save">save</button>
+
+    </div>
+
+
+
+    <script src="./scripts/remScript.js"></script>
+</body>
+</html>

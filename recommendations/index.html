@@ -1,250 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Recomendations</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title></title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="./assets/assets/img/favicon.png" rel="icon" />
+    <link
+      href="./assets/assets/img/apple-touch-icon.png"
+      rel="apple-touch-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="./assets/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./assets/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="./assets/assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="./assets/assets/vendor/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link href="./assets/assets/css/variables.css" rel="stylesheet" />
+    <link href="./assets/assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  ======================================================== -->
   </head>
+
   <body>
-    <header>
-      <div class="heading">
-        <p><strong>Useful Products & Resources:</strong>shared by the Wazee community</p>
-      </div>
-      <div class="recomend">
-        <p>Below are products and resources our Explorers have found useful or interesting in their search for ways to help mitigate the challenges of growing older.</p>
-        <p id="more">If you are looking for medical alerts, you can find our coverage and product reviews here: <a href="/">Medical Alert Systems: Selection Guide.</a></p>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top" data-scrollto-offset="0">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center scrollto me-auto me-lg-0"
+        >
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1>OldHeaven<span>.</span></h1>
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Home</span>
+                <i class="bi bi-chevron-down dropdown-indicator"></i
+              ></a>
+              <ul>
+                <li>
+                  <a href="index.html" class="active">Home 1 - index.html</a>
+                </li>
+                <li>
+                  <a href="index-2.html">Home 2 - index-2.html</a>
+                </li>
+                <li><a href="index-3.html">Home 3 - index-3.html</a></li>
+                <li><a href="index-4.html">Home 4 - index-4.html</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="nav-link scrollto" href="index.html#about">About</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="index.html#services"
+                >Services</a
+              >
+            </li>
+
+            <li>
+              <a class="nav-link scrollto" href="index.html#team">Team</a>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li>
+              <a class="nav-link scrollto" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle d-none"></i>
+        </nav>
+        <!-- .navbar -->
       </div>
     </header>
-    <div class="product_type">
-      <div class="product_listing">
-        <div class="grid_items">
-          <p id="recent" class="active">Recent</p>
-          <p id="browse" class="">Browse By Topic</p>
-          <p id="special" class="">Special Listing</p>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section
+      id="hero"
+      class="hero carousel carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+    >
+      <div class="carousel-item active">
+        <div class="container">
+          <div class="row justify-content-center gy-6">
+            <div class="col-lg-5 col-md-8">
+              <img
+                src="./assets/assets/img/hero-carousel/hero-carousel-1.svg"
+                alt=""
+                class="img-fluid img"
+              />
+            </div>
+
+            <div class="col-lg-9 text-center">
+              <h2>Elderly Care</h2>
+              <p>To support Medical and health services and activities.</p>
+              <div>
+                <a href="./reminders.html" class="btn-get-started scrollto"
+                  >Login
+                </a>
+                <a href="./index.html" class="btn-get-started scrollto"
+                  >SignUp</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="products recent">
-        <h1>New Listings</h1>
-        <div class="grid_disp">
-            <div class="item display">
-                <a href="/">
-                    <p class="name">Envision Smart Glasses</p>
-                    <img
-                    src="glasses.jpg"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-            <div class="item display">
-                <a href="/">
-                    <p class="name">Envision Smart Glasses</p>
-                    <img
-                    src="glasses.jpg"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-            <div class="item display">
-                <a href="/">
-                    <p class="name">Envision Smart Glasses</p>
-                    <img
-                    src="glasses.jpg"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-            <div class="item display">
-                <a href="/">
-                    <p class="name">Envision Smart Glasses</p>
-                    <img
-                    src="glasses.jpg"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="products browse hide">
-        <h1>Choose A Topic</h1>
-        <div class="grid_disp">
-            <div class="item display">
-                <a href="/">
-                    <p class="name">Tochie: Personal Voice Aide</p>
-                    <img
-                    src="alexa.jpg"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-            <div class="item display">
-                <a href="/">
-                    <p class="name">Tochie: Personal Voice Aide</p>
-                    <img
-                    src="alexa.jpg"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-            <div class="item display">
-                <a href="/">
-                    <p class="name">Tochie: Personal Voice Aide</p>
-                    <img
-                    src="alexa.jpg"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-            <div class="item display">
-                <a href="/">
-                    <p class="name">Tochie: Personal Voice Aide</p>
-                    <img
-                    src="alexa.jpg"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="products special hide">
-        <h1>Products With Special offers</h1>
-        <div class="grid_disp">
-            <div class="item display">
-                <a href="/">
-                    <p class="name">UnaliWear, Kanega Watch</p>
-                    <img
-                    src="watch.jfif"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-            <div class="item display">
-                <a href="/">
-                    <p class="name">UnaliWear, Kanega Watch</p>
-                    <img
-                    src="watch.jfif"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-            <div class="item display">
-                <a href="/">
-                    <p class="name">UnaliWear, Kanega Watch</p>
-                    <img
-                    src="watch.jfif"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-            <div class="item display">
-                <a href="/">
-                    <p class="name">UnaliWear, Kanega Watch</p>
-                    <img
-                    src="watch.jfif"
-                    alt="item image"
-                    />
-                    <div class="descr">
-                        <p>Envision Smart Glasses are glasses with a camera and a direct speaker
-                            that are intended to speak out text, environmental features, recognize
-                            faces, light and colors and let the user share that information.
-                        </p>
-                        <a id="learnmore" href="#">Learn More...</a>
-                    </p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <script src="./index.js"></script>
+      <!-- End Carousel Item -->
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- ======= Footer ======= -->
+
+    <a
+      href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="./assets/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/assets/vendor/aos/aos.js"></script>
+    <script src="./assets/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="./assets/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="./assets/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="./assets/assets/js/main.js"></script>
   </body>
 </html>
